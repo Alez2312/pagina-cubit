@@ -22,11 +22,42 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  width: 100%;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.card_grand_father {
+  width: 100%;
+}
+
+.card_father {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 170px);
+  margin: 50px;
+}
+
+.card {
+  border-radius: 15px;
+  background-color: aqua;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+  padding: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: transparent;
+  cursor: pointer;
+}
+
+.card:hover .card_text {
+  color: black;
+  box-shadow: 0 0 10px #282c34;
+  background-color: white;
+}
+
 
 @keyframes App-logo-spin {
   from {
